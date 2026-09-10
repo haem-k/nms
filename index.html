@@ -114,52 +114,59 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "Length-varying Neural Motion Stitching via Cluster Transition Graph",
+    "description": "We present a length-varying neural motion stitching method that generates seamless transitions between diverse input motions.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Haemin Kim",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "KAIST"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Junghyun Nam",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "KAIST"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Seokhyeon Hong",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "KAIST"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Vanessa Tan",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "KAIST"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Junyong Noh",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "KAIST"
         }
       }
     ],
     "datePublished": "2024-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "ACM Transactions on Graphics"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
+    "url": "https://haem-k.github.io/nms",
+    "image": "https://haem-k.github.io/nms/static/images/teaser_final.png",
+    "keywords": ["character animation", "motion stitching", "transition generation", "motion inbetweening", "machine learning"],
+    "abstract": "Motion stitching aims to create new character animations by seamlessly combining existing motion sequences. Existing approaches often require manual selection of transition range or assume fixed transition length, restricting the types of motions that can be connected. To broaden the diversity of motions that can be synthesized, it is essential to generate transitions of varying lengths, allowing the character sufficient time to adapt its pose when the input motions differ significantly. To this end, we propose a length-varying neural motion stitching method based on a cluster transition graph, which produces naturally connected motion sequences given two distinct input motions. Our framework consists of three stages: motion clustering, cluster pathfinding, and motion generation. First, motion clustering maps input motions to discrete clusters. Next, we identify the corresponding clusters in the cluster transition graph and search for a connecting path. In this graph, nodes represent motion clusters, and directed edges indicate valid transitions between them. The resulting path determines both the transition length and a guide sequence that informs motion generation. Finally, the path and input motions are provided to a Transformer encoder-based motion generator to produce the final transition poses. Experimental results demonstrate that our method adaptively adjusts the motion length and successfully generates plausible transitions between distinct motions, such as crawling, basketball shooting, and slow locomotion. We also show that using a graph structure effectively estimates transition durations and produces high-fidelity results compared to methods that assume a fixed transition length, or directly compute the time.",
   }
   </script>
   
