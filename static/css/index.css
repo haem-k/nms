@@ -287,7 +287,6 @@ body {
 
 .results-carousel .subtitle {
   font-size: 1rem !important;
-  color: var(--text-secondary);
   margin-top: 1rem;
   font-weight: 500;
 }
