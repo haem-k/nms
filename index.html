@@ -501,27 +501,41 @@
 <!-- End Transition Direction Control video -->
 
 <!-- Comparison video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">
-        Comparison with Baselines
-      </h2>
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Comparison with Baselines
+    </h2>
+
+    <div class="carousel-wrapper">
       <div id="comparison-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+
+        <div class="item">
+          <video controls muted loop playsinline preload="metadata"
+                 style="width: 100%; height: auto; display: block;">
             <source src="static/videos/comparison_a.mp4" type="video/mp4">
           </video>
+
+          <h2 class="subtitle has-text-centered">
+            Comparison with baseline methods on the first example.
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+
+        <div class="item">
+          <video controls muted loop playsinline preload="metadata"
+                 style="width: 100%; height: auto; display: block;">
             <source src="static/videos/comparison_b.mp4" type="video/mp4">
           </video>
+
+          <h2 class="subtitle has-text-centered">
+            Comparison with baseline methods on the second example.
+          </h2>
         </div>
+
       </div>
     </div>
+
   </div>
 </section>
 <!-- End Comparison video carousel -->
