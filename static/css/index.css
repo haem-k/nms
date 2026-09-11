@@ -327,17 +327,12 @@ body {
   right: -3rem !important;
 }
 
-/* 아래 pagination dot 제거 */
-.carousel .carousel-navigation.is-overlay .carousel-nav-left,
-.carousel .carousel-navigation.is-overlay .carousel-nav-right {
-  opacity: 1;
-}
 
-.carousel .carousel-pagination {
+/* Pagination and Misc Improvements */
+.slider-pagination {
   display: none !important;
 }
 
-/* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
   border-radius: 50%;
