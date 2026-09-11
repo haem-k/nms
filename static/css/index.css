@@ -253,7 +253,7 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.results-carousel {
+/* .results-carousel {
   overflow: hidden;
   padding: 1rem 0;
 }
@@ -288,6 +288,33 @@ body {
   color: var(--text-secondary);
   margin-top: 1rem;
   font-weight: 500;
+} */
+
+.results-carousel {
+  overflow: hidden;
+  padding: 0;
+}
+
+.results-carousel .item {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none !important;
+}
+
+.results-carousel .item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.results-carousel .item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
 }
 
 /* Pagination and Misc Improvements */
