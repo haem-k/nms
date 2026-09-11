@@ -294,11 +294,11 @@ body {
 
 .carousel-wrapper {
   position: relative;
-  overflow: visible;
+  overflow: visible; /* 화살표는 바깥에 보이게 */
 }
 
 .results-carousel {
-  overflow: visible;
+  overflow: hidden; /* 옆 비디오는 숨김 */
   padding: 0;
 }
 
