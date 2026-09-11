@@ -283,6 +283,8 @@ body {
   height: auto;
 }
 */
+
+
 .results-carousel .subtitle {
   font-size: 1rem !important;
   color: var(--text-secondary);
@@ -290,8 +292,13 @@ body {
   font-weight: 500;
 }
 
+.carousel-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
 .results-carousel {
-  overflow: hidden;
+  overflow: visible;
   padding: 0;
 }
 
@@ -302,12 +309,6 @@ body {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  transform: none !important;
-}
-
-.results-carousel .item:hover {
-  transform: none;
-  box-shadow: none;
 }
 
 .results-carousel .item video {
@@ -315,6 +316,25 @@ body {
   height: auto;
   display: block;
   border-radius: 0;
+}
+
+/* 화살표를 영상 바깥쪽으로 */
+.carousel .carousel-navigation .carousel-nav-left {
+  left: -3rem !important;
+}
+
+.carousel .carousel-navigation .carousel-nav-right {
+  right: -3rem !important;
+}
+
+/* 아래 pagination dot 제거 */
+.carousel .carousel-navigation.is-overlay .carousel-nav-left,
+.carousel .carousel-navigation.is-overlay .carousel-nav-right {
+  opacity: 1;
+}
+
+.carousel .carousel-pagination {
+  display: none !important;
 }
 
 /* Pagination and Misc Improvements */
