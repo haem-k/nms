@@ -394,46 +394,53 @@
 
 
 <!-- Results video carousel -->
+<!-- Results video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+
       <h2 class="title is-3 has-text-centered">
         Motion Stitching Results
       </h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+
+      <div id="motion-results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <video controls muted loop playsinline preload="metadata"
+                 style="width: 100%; height: auto; display: block;">
             <source src="static/videos/diverse.mp4" type="video/mp4">
           </video>
 
-          <p class="has-text-centered" style="margin-top: 1rem;">
-          Motion stitching results on distinct motions.
-          </p>
+          <div class="has-text-centered"
+               style="margin-top: 1rem; margin-bottom: 1rem;">
+            Motion stitching results on distinct motions.
+          </div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+
+        <div class="item">
+          <video controls muted loop playsinline preload="metadata"
+                 style="width: 100%; height: auto; display: block;">
             <source src="static/videos/phase.mp4" type="video/mp4">
           </video>
 
-          <p class="has-text-centered" style="margin-top: 1rem;">
-          Stitching motions with difference foot phases. The first input motion is identical in both test cases.
-          </p>
+          <div class="has-text-centered"
+               style="margin-top: 1rem; margin-bottom: 1rem;">
+            Stitching motions with different foot phases. The first input motion is identical in both test cases.
+          </div>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+
+        <div class="item">
+          <video controls muted loop playsinline preload="metadata"
+                 style="width: 100%; height: auto; display: block;">
             <source src="static/videos/singlepose.mp4" type="video/mp4">
           </video>
 
-          <p class="has-text-centered" style="margin-top: 1rem;">
-          Comparison between the results from motion block and single pose inputs.
-          </p>
+          <div class="has-text-centered"
+               style="margin-top: 1rem; margin-bottom: 1rem;">
+            Comparison between results from motion block and single-pose inputs.
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -442,7 +449,7 @@
 
 <!-- Unseen input video -->
 <section class="section">
-  <div class="container is-max-widescreen">
+  <div class="container is-max-desktop">
 
     <!-- Title -->
     <h2 class="title is-3 has-text-centered">
@@ -470,7 +477,7 @@
 
 <!-- Transition Direction Control video -->
 <section class="section">
-  <div class="container is-max-widescreen">
+  <div class="container is-max-desktop">
 
     <!-- Title -->
     <h2 class="title is-3 has-text-centered">
@@ -503,15 +510,15 @@
       <h2 class="title is-3 has-text-centered">
         Comparison with Baselines
       </h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="comparison-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+          <video poster="" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
             <source src="static/videos/comparison_a.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+          <video poster="" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
             <source src="static/videos/comparison_b.mp4" type="video/mp4">
           </video>
