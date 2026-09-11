@@ -367,31 +367,26 @@
 
 <!-- Method overview -->
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
 
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
+    <!-- Title -->
+    <h2 class="title is-3 has-text-centered">
+      Method Overview
+    </h2>
 
-        <!-- Title -->
-        <h2 class="title is-3 has-text-centered">
-          Method Overview
-        </h2>
+    <!-- Image -->
+    <figure>
+      <img src="static/images/overview.png"
+            alt="Method overview"
+            style="width: 100%; height: auto; display: block;">
 
-        <!-- Image -->
-        <figure>
-          <img src="static/images/overview.png"
-               alt="Method overview"
-               style="width: 100%; height: auto; display: block;">
+      <!-- Caption -->
+      <figcaption class="has-text-centered"
+                  style="margin-top: 0.75rem;">
+        Input motions are mapped to cluster IDs through motion clustering. During cluster pathfinding, we run a shortest-path algorithm on the cluster transition graph. Once we obtain the cluster path, we utilize the path and the original input motions to generate final connected motion.
+      </figcaption>
+    </figure>
 
-          <!-- Caption -->
-          <figcaption class="has-text-centered"
-                      style="margin-top: 0.75rem;">
-            Input motions are mapped to cluster IDs through motion clustering. During cluster pathfinding, we run a shortest-path algorithm on the cluster transition graph. Once we obtain the cluster path, we utilize the path and the original input motions to generate final connected motion.
-          </figcaption>
-        </figure>
-
-      </div>
-    </div>
 
   </div>
 </section>
