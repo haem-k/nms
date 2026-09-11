@@ -381,7 +381,7 @@
             style="width: 100%; height: auto; display: block;">
 
       <!-- Caption -->
-      <figcaption class="has-text-centered"
+      <figcaption class="has-text-justified"
                   style="margin-top: 2rem;">
         Input motions are mapped to cluster IDs through motion clustering. During cluster pathfinding, we run a shortest-path algorithm on the cluster transition graph. Once we obtain the cluster path, we utilize the path and the original input motions to generate final connected motion.
       </figcaption>
@@ -393,123 +393,134 @@
 <!-- End method overview -->
 
 
-<!-- Image carousel -->
+<!-- Results video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+      <h2 class="title is-3 has-text-centered">
+        Motion Stitching Results
       </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/diverse.mp4" type="video/mp4">
           </video>
+
+          <p class="has-text-centered" style="margin-top: 1rem;">
+          Motion stitching results on distinct motions.
+          </p>
         </div>
         <div class="item item-video2">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/phase.mp4" type="video/mp4">
           </video>
+
+          <p class="has-text-centered" style="margin-top: 1rem;">
+          Stitching motions with difference foot phases. The first input motion is identical in both test cases.
+          </p>
         </div>
         <div class="item item-video3">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/singlepose.mp4" type="video/mp4">
+          </video>
+
+          <p class="has-text-centered" style="margin-top: 1rem;">
+          Comparison between the results from motion block and single pose inputs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results video carousel -->
+
+<!-- Unseen input video -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <!-- Title -->
+    <h2 class="title is-3 has-text-centered">
+      Motion Stitching on Unseen Motions
+    </h2>
+
+    <!-- Video -->
+    <figure>
+      <video autoplay controls muted loop playsinline
+             preload="metadata"
+             style="width: 100%; height: auto; display: block;">
+        <source src="static/videos/unseen.mp4" type="video/mp4">
+      </video>
+
+      <!-- Caption -->
+      <figcaption class="has-text-centered"
+                  style="margin-top: 1rem;">
+        Motion stitching results on unseen motions. Each input was picked from different datasets.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+<!-- End Unseen input video -->
+
+<!-- Transition Direction Control video -->
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <!-- Title -->
+    <h2 class="title is-3 has-text-centered">
+      Transition Direction Control
+    </h2>
+
+    <!-- Video -->
+    <figure>
+      <video autoplay controls muted loop playsinline
+             preload="metadata"
+             style="width: 100%; height: auto; display: block;">
+        <source src="static/videos/direction.mp4" type="video/mp4">
+      </video>
+
+      <!-- Caption -->
+      <figcaption class="has-text-centered"
+                  style="margin-top: 1rem;">
+        Controlling transition direction. Given the same input motions, our method produces different motions based on given user control direction.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+<!-- End Transition Direction Control video -->
+
+<!-- Comparison video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">
+        Comparison with Baselines
+      </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/comparison_a.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/comparison_b.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe> -->
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
+<!-- End Comparison video carousel -->
 
 
 <!--BibTex citation -->
